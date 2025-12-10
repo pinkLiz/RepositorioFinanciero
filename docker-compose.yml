@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:9.1
+    container_name: app-financiera-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: finanzas2025
+      MYSQL_DATABASE: finanzasdb
+
+    ports:
+      - "3307:3306"
+    volumes:
+      - "/Users/liz/Documents/ProyectoSwift/data:/var/lib/mysql" 
+ 
+ 
